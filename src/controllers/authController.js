@@ -2,6 +2,8 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const nodemailer = require('nodemailer');
 const User = require('../models/User');
+require('dotenv').config();
+
 
 // Temporary OTP store (can be replaced with Redis or a database)
 const otpStore = {};
@@ -81,8 +83,8 @@ exports.requestOtp = async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'Gmail',
       auth: {
-        user: process.env.EMAIL_USER, // Add your email credentials to .env
-        pass: process.env.EMAIL_PASS,
+          user: process.env.EMAIL_USER,
+          pass: process.env.EMAIL_PASS,
       },
     });
 
