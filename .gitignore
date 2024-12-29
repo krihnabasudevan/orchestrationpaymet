@@ -1,0 +1,30 @@
+
+# Node.js dependencies
+/node_modules/
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# Build output
+/dist/
+/build/
+
+# OS-specific files
+.DS_Store          # macOS
+Thumbs.db          # Windows
+
+# IDE files
+.idea/             # JetBrains IDEs
+.vscode/           # VS Code
+
+# NPM package lock file (optional, but sometimes ignored)
+package-lock.json  # If you want to ignore the lock file
+
+# Temporary files
+*.swp              # Vim
+
+# Ignore uploads folder
+/uploads/
